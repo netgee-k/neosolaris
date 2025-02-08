@@ -34,7 +34,7 @@
         // Handle file upload form submission
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['upload'])) {
             $file = $_FILES['upload'];
-            $targetDir = "/home/eli/uploads/"; //adjust accordingly
+            $targetDir = "/home/eli/"; //adjust accordingly
             $targetFile = $targetDir . basename($file['name']); // Preserve original name
 
             // Save uploaded file directly
